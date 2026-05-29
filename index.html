@@ -5,18 +5,32 @@
 <title>North Andaman Explorers</title>
 </head>
 
-<body style="margin:0; font-family:Arial; background:#f>
+<body style="margin:0; font-family:Arial; background:#f4f9ff;">
 
 <!-- HEADER -->
-<div style="background:#023e8a; color:white; padding:20>
+<div style="background:#023e8a; color:white; padding:20px; text-align:center;">
 <h1>NORTH ANDAMAN EXPLORERS</h1>
 <p>YOUR TRUSTED TRAVEL PARTNER</p>
 </div>
 
 <!-- HERO -->
-<div style="background:url('https://images.unsplash.com>
+<div style="
+background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+background-size:cover;
+background-position:center;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:40px;
+font-weight:bold;
+text-shadow:2px 2px 10px black;
+text-align:center;
+">
 EXPLORE BEAUTIFUL ANDAMAN
 </div>
+
 <!-- ABOUT -->
 <div style="
 padding:40px 20px;
@@ -30,20 +44,15 @@ color:#023e8a;
 font-size:32px;
 margin-bottom:20px;
 ">
+ABOUT NORTH ANDAMAN EXPLORERS
+</h2>
+
 <!-- ABOUT SWIPE SECTION -->
 <div style="
 padding:40px 0;
 background:#f4f9ff;
 text-align:center;
 ">
-
-<h2 style="
-color:#023e8a;
-font-size:34px;
-margin-bottom:25px;
-">
-ABOUT NORTH ANDAMAN EXPLORERS
-</h2>
 
 <!-- SWIPE CONTAINER -->
 <div style="
@@ -76,11 +85,11 @@ line-height:1.8;
 color:#333;
 ">
 
-Welcome to <b>North Andaman Explorers</b>, your trusted>
+Welcome to <b>North Andaman Explorers</b>, your trusted local travel partner for discovering the untouched beauty of the Andaman Islands.
 
-We specialize in creating authentic island experiences >
+We specialize in creating authentic island experiences for travelers seeking nature, adventure, and peaceful escapes.
 
-From peaceful beach night stays to thrilling forest tre>
+From peaceful beach night stays to thrilling forest trekking, we provide unforgettable experiences with local guidance and hospitality.
 
 </p>
 
@@ -118,7 +127,7 @@ margin:auto;
 
 <p>✔ Personalized island experiences</p>
 
-<p>✔ Hidden destinations beyond normal tourist routes</>
+<p>✔ Hidden destinations beyond normal tourist routes</p>
 
 <p>✔ Professional support throughout your journey</p>
 
@@ -147,9 +156,9 @@ line-height:1.8;
 color:#333;
 ">
 
-Our mission is to showcase the untouched natural beauty>
+Our mission is to showcase the untouched natural beauty of North Andaman while supporting eco-friendly tourism and local communities.
 
-We believe travel should be more than sightseeing — it >
+We believe travel should be more than sightseeing — it should be a meaningful experience connected with nature, culture, and adventure.
 
 </p>
 
@@ -167,7 +176,8 @@ font-size:18px;
 
 </div>
 </div>
-</div>
+
+<div style="text-align:center;">
 
 <button onclick="openActivities()"
 style="
@@ -187,7 +197,8 @@ display:inline-block;
 text-transform:uppercase;
 ">
 🌴 VIEW ACTIVITIES 🌴
-</button></button></button>
+</button>
+
 </div>
 
 <!-- ACTIVITIES PAGE -->
@@ -209,37 +220,37 @@ CLICK ANY ACTIVITY TO VIEW FULL DETAILS
 <div style="max-width:800px; margin:auto;">
 
 <p onclick="showDetails(1)"
-style="cursor:pointer; padding:12px; background:white; >
+style="cursor:pointer; padding:12px; background:white; margin:10px 0; border-radius:10px;">
 1. RAMNAGAR BEACH NIGHT STAY
 </p>
 
 <p onclick="showDetails(2)"
-style="cursor:pointer; padding:12px; background:white; >
+style="cursor:pointer; padding:12px; background:white; margin:10px 0; border-radius:10px;">
 2. SADDLE PEAK TREKKING
 </p>
 
 <p onclick="showDetails(3)"
-style="cursor:pointer; padding:12px; background:white; >
+style="cursor:pointer; padding:12px; background:white; margin:10px 0; border-radius:10px;">
 3. MUD VOLCANO VISIT
 </p>
 
 <p onclick="showDetails(4)"
-style="cursor:pointer; padding:12px; background:white; >
+style="cursor:pointer; padding:12px; background:white; margin:10px 0; border-radius:10px;">
 4. EXTREME SEA FISHING
 </p>
 
 <p onclick="showDetails(5)"
-style="cursor:pointer; padding:12px; background:white; >
+style="cursor:pointer; padding:12px; background:white; margin:10px 0; border-radius:10px;">
 5. ROSS & SMITH ISLAND TOUR
 </p>
 
 <p onclick="showDetails(6)"
-style="cursor:pointer; padding:12px; background:white; >
+style="cursor:pointer; padding:12px; background:white; margin:10px 0; border-radius:10px;">
 6. KALIPUR & LAMIYA BAY VIEW
 </p>
 
 <p onclick="showDetails(7)"
-style="cursor:pointer; padding:12px; background:white; >
+style="cursor:pointer; padding:12px; background:white; margin:10px 0; border-radius:10px;">
 7. PATHI LEVEL, SWIFTLET CAMP & CAVES TREKKING
 </p>
 
@@ -263,7 +274,7 @@ line-height:1.7;">
 <script>
 
 function openActivities(){
-document.getElementById("activitiesPage").style.display>
+document.getElementById("activitiesPage").style.display = "block";
 window.scrollTo(0,document.body.scrollHeight);
 }
 
@@ -277,22 +288,22 @@ text = `
 
 <h3>ABOUT THE PLACE</h3>
 <p>
-Ramnagar Beach is one of the most peaceful and untouche>
+Ramnagar Beach is one of the most peaceful and untouched beaches in North Andaman.
 </p>
 
 <h3>ACTIVITY EXPERIENCE</h3>
 <p>
-Visitors can enjoy overnight beach camping, bonfire gat>
+Visitors can enjoy overnight beach camping, bonfire gatherings, and stargazing experiences.
 </p>
 
 <h3>WHY IT IS FAMOUS</h3>
 <p>
-The beach is famous for its natural silence, clean coas>
+The beach is famous for its natural silence, clean coastline, and relaxing atmosphere.
 </p>
 
 <h3>BEDDING & STAY</h3>
 <p>
-Comfortable camping tents, sleeping bedding, blankets, >
+Comfortable camping tents, sleeping bedding, blankets, and food arrangements are available.
 </p>
 `;
 }
@@ -303,22 +314,22 @@ text = `
 
 <h3>ABOUT THE PLACE</h3>
 <p>
-Saddle Peak is the highest mountain peak in the Andaman>
+Saddle Peak is the highest mountain peak in the Andaman Islands.
 </p>
 
 <h3>ACTIVITY EXPERIENCE</h3>
 <p>
-Travelers trek through dense rainforest trails, wooden >
+Travelers trek through dense rainforest trails, wooden bridges, and wildlife areas.
 </p>
 
 <h3>WHY IT IS FAMOUS</h3>
 <p>
-It is famous for being the highest trekking destination>
+It is famous for being the highest trekking destination in the Andaman Islands.
 </p>
 
 <h3>BEDDING & STAY</h3>
 <p>
-Basic eco-stay arrangements and resting camps can be or>
+Basic eco-stay arrangements and resting camps can be organized nearby.
 </p>
 `;
 }
@@ -329,22 +340,22 @@ text = `
 
 <h3>ABOUT THE PLACE</h3>
 <p>
-The Mud Volcano is one of the rare geological wonders o>
+The Mud Volcano is one of the rare geological wonders of the Andaman Islands.
 </p>
 
 <h3>ACTIVITY EXPERIENCE</h3>
 <p>
-Visitors can walk through forest pathways to see bubbli>
+Visitors can walk through forest pathways to see bubbling mud craters.
 </p>
 
 <h3>WHY IT IS FAMOUS</h3>
 <p>
-It is famous for its scientific uniqueness and rare nat>
+It is famous for its scientific uniqueness and rare natural formation.
 </p>
 
 <h3>BEDDING & STAY</h3>
 <p>
-Nearby accommodation and resting facilities can be arra>
+Nearby accommodation and resting facilities can be arranged.
 </p>
 `;
 }
@@ -355,22 +366,22 @@ text = `
 
 <h3>ABOUT THE PLACE</h3>
 <p>
-The deep waters around North Andaman are rich with mari>
+The deep waters around North Andaman are rich with marine life.
 </p>
 
 <h3>ACTIVITY EXPERIENCE</h3>
 <p>
-Travel far into the open sea with experienced local gui>
+Travel far into the open sea with experienced local guides for fishing adventures.
 </p>
 
 <h3>WHY IT IS FAMOUS</h3>
 <p>
-This activity is famous among adventure travelers for i>
+This activity is famous among adventure travelers for its exciting deep-sea experience.
 </p>
 
 <h3>BEDDING & STAY</h3>
 <p>
-Night fishing camps, resting arrangements, and basic be>
+Night fishing camps, resting arrangements, and basic bedding facilities are available.
 </p>
 `;
 }
@@ -381,22 +392,22 @@ text = `
 
 <h3>ABOUT THE PLACE</h3>
 <p>
-Ross & Smith Islands are world-famous twin islands conn>
+Ross & Smith Islands are world-famous twin islands connected by a natural sandbar.
 </p>
 
 <h3>ACTIVITY EXPERIENCE</h3>
 <p>
-Visitors can walk on the natural sand bridge, enjoy swi>
+Visitors can walk on the natural sand bridge, enjoy swimming, and relax on the beach.
 </p>
 
 <h3>WHY IT IS FAMOUS</h3>
 <p>
-The islands are famous for their unique natural sandbar>
+The islands are famous for their unique natural sandbar and crystal-clear waters.
 </p>
 
 <h3>BEDDING & STAY</h3>
 <p>
-Nearby resort and beach stay options are available with>
+Nearby resort and beach stay options are available with basic facilities.
 </p>
 `;
 }
@@ -407,22 +418,22 @@ text = `
 
 <h3>ABOUT THE PLACE</h3>
 <p>
-Kalipur Beach is famous for turtle nesting areas while >
+Kalipur Beach is famous for turtle nesting areas while Lamiya Bay is known for scenic pebble beaches.
 </p>
 
 <h3>ACTIVITY EXPERIENCE</h3>
 <p>
-Travelers can enjoy peaceful beach walks, photography, >
+Travelers can enjoy peaceful beach walks, photography, and sunrise views.
 </p>
 
 <h3>WHY IT IS FAMOUS</h3>
 <p>
-The destination is famous for turtle conservation activ>
+The destination is famous for turtle conservation activities and natural beauty.
 </p>
 
 <h3>BEDDING & STAY</h3>
 <p>
-Comfortable eco-huts, beachside accommodations, and loc>
+Comfortable eco-huts, beachside accommodations, and local stays are available nearby.
 </p>
 `;
 }
@@ -433,48 +444,61 @@ text = `
 
 <h3>ABOUT THE PLACE</h3>
 <p>
-This region includes dense forest routes, limestone cav>
+This region includes dense forest routes, limestone caves, and bird habitats.
 </p>
 
 <h3>ACTIVITY EXPERIENCE</h3>
 <p>
-Visitors experience forest trekking, cave exploration, >
+Visitors experience forest trekking, cave exploration, and wildlife observation.
 </p>
 
 <h3>WHY IT IS FAMOUS</h3>
 <p>
-It is famous for combining adventure trekking, caves, w>
+It is famous for combining adventure trekking, caves, wildlife, and forest beauty.
 </p>
 
 <h3>BEDDING & STAY</h3>
 <p>
-Basic forest camp stays and eco-resting facilities may >
+Basic forest camp stays and eco-resting facilities may be available nearby.
 </p>
 `;
 }
 
-document.getElementById("detailsBox").style.display="bl>
+document.getElementById("detailsBox").style.display="block";
 document.getElementById("detailsBox").innerHTML=text;
 
 }
 
-</script></div>
+</script>
 
 <!-- CONTACT -->
-<div style="padding:20px; text-align:center; background>
+<div style="padding:20px; text-align:center; background:white;">
 <h2>CONTACT</h2>
 <p>📞 WhatsApp: +91XXXXXXXXXX</p>
 
 <a href="https://wa.me/91XXXXXXXXXX"
-style="background:#25D366; color:white; padding:12px 20>
+style="
+background:#25D366;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:8px;
+display:inline-block;
+">
 BOOK NOW
 </a>
 </div>
 
 <!-- FOOTER -->
-<div style="background:#023e8a; color:white; text-align>
+<div style="
+background:#023e8a;
+color:white;
+text-align:center;
+padding:15px;
+">
 © 2026 NORTH ANDAMAN EXPLORERS
 </div>
 
 </body>
 </html>
+
