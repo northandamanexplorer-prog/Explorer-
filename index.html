@@ -469,6 +469,177 @@ document.getElementById("detailsBox").innerHTML=text;
 <section style="text-align:center;padding:60px 20px;background:#023e8a;color:white;">
 
 <h2 style="font-size:38px;">
+<!-- GALLERY SECTION -->
+<section id="gallery" style="padding:50px 20px; background:#f4f9ff; text-align:center;">
+
+<h2 style="color:#023e8a;">📸 GALLERY</h2>
+<p>Explore the beauty of North Andaman</p>
+
+<div class="gallery-slider">
+
+<div class="gallery-slide active">
+<h3><u><b>🐢 TORTOISE NESTING SITE - RAMNAGAR BEACH</b></u></h3>
+<img src="https://i.postimg.cc/mrcmP2Cf/file-0000000092047207bca6724bee4e2d81.png" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-slide">
+<h3><u><b>🐢 TORTOISE CONSERVATION - RAMNAGAR BEACH</b></u></h3>
+<img src="https://i.postimg.cc/yW4HbbKx/file-000000004b587209b530ca063a347ed0.png" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-slide">
+<h3><u><b>🌊 RAMNAGAR BEACH NIGHT EXPERIENCE</b></u></h3>
+<img src="https://i.postimg.cc/1zt36b5j/file-0000000064a871fa8531e6b358c7b165.png" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-slide">
+<h3><u><b>🏖️ RAMNAGAR BEACH</b></u></h3>
+<img src="https://i.postimg.cc/m2j4wVnp/file-000000001224720694a9d677d3959c2e.png" onclick="openImage(this.src)">
+</div>
+
+<button class="gallery-prev" onclick="changeGallery(-1)">❮</button>
+<button class="gallery-next" onclick="changeGallery(1)">❯</button>
+
+</div>
+
+</section>
+
+<!-- IMAGE POPUP -->
+<div id="imageModal" onclick="closeImage()">
+<img id="modalImg">
+</div>
+
+<style>
+
+.gallery-slider{
+max-width:900px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+position:relative;
+overflow:hidden;
+}
+
+.gallery-slide{
+display:none;
+}
+
+.gallery-slide.active{
+display:block;
+}
+
+.gallery-slide img{
+  width:100%;
+  height:500px;
+  object-fit:contain; /* Shows full image */
+  background:#000;
+}
+cursor:pointer;
+transition:0.4s;
+}
+
+.gallery-slide img:hover{
+transform:scale(1.02);
+}
+
+.gallery-prev,
+.gallery-next{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:#023e8a;
+color:white;
+border:none;
+padding:15px;
+font-size:24px;
+cursor:pointer;
+border-radius:10px;
+}
+
+.gallery-prev{
+left:10px;
+}
+
+.gallery-next{
+right:10px;
+}
+
+#imageModal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.95);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+#modalImg{
+max-width:95%;
+max-height:95%;
+border-radius:10px;
+}
+
+@media(max-width:768px){
+
+.gallery-prev,
+.gallery-next{
+padding:10px;
+font-size:20px;
+}
+
+.gallery-slide img{
+max-height:350px;
+}
+
+}
+
+</style>
+
+<script>
+
+let galleryIndex = 0;
+let gallerySlides = document.querySelectorAll(".gallery-slide");
+
+function showGallery(n){
+gallerySlides.forEach(slide => slide.classList.remove("active"));
+galleryIndex = (n + gallerySlides.length) % gallerySlides.length;
+gallerySlides[galleryIndex].classList.add("active");
+}
+
+function changeGallery(n){
+showGallery(galleryIndex + n);
+}
+
+let autoGallery = setInterval(()=>{
+showGallery(galleryIndex + 1);
+},3000);
+
+document.querySelector(".gallery-slider").addEventListener("touchstart",()=>{
+clearInterval(autoGallery);
+});
+
+document.querySelector(".gallery-slider").addEventListener("mousedown",()=>{
+clearInterval(autoGallery);
+});
+
+function openImage(src){
+document.getElementById("imageModal").style.display="flex";
+document.getElementById("modalImg").src=src;
+}
+
+function closeImage(){
+document.getElementById("imageModal").style.display="none";
+}
+
+showGallery(0);
+
+</script>
 📞 CONTACT & BOOKING
 </h2>
 
